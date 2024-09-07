@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e63f7f1d38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="logo4.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <!-- <li><a href="#">Portfolio</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <!-- <p>Web Developer</p> -->
+                <h1>Hi, I'm <span>Krishna</span> <br>Gupta and I am a passionate <span id="element"></span> 
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly motivated software developer with a Bachelor's degree in Computer Science and
+                        Engineering and a solid foundation in Java, SQL, JavaScript, HTML, CSS, and React. Experienced
+                        in building scalable, real-time web applications using distributed microservices architecture.
+                        Proven ability to lead development teams, mentor engineers, and collaborate effectively with
+                        cross-functional teams. Skilled in problem-solving, API integration, and UI/UX optimization.
+                        Certified in AWS Cloud and Advanced Java, with a strong track record of delivering high-quality
+                        code and enhancing user experiences. Passionate about continuous learning and driving
+                        innovation.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages: </span><br> Java , SQL , JavaScript , HTML , CSS</li>
+                            <li><span>Technologies/Frameworks: </span><br> NodeJs , ReactJs , Bootstrap</li>
+                            <li><span>Database: </span><br>MySQL , MongoDB</li>
+                            <li><span>Cloud Computing: </span><br> AWS Cloud</li>
+                            <li><span>Version Control: </span><br>Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Precursor Info Solution Pvt. Ltd. (July - Aug 2023)</span><br>Web Developer
+                                Intern<br></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Babu Banarasi Das Institute Of Technology and Management (2020 -
+                                    2024)</span><br>Bachelors Of Technology<br>Computer Science and Engineering </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Services----------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>REAL-TIME TASK MANAGEMENT SYSTEM</h2>
+                    <p>Developed a scalable task management app using JavaScript, React, Node.js, HTML, and CSS, with a
+                        microservices architecture for real-time updates via WebSocket and Redis caching. Led the team,
+                        resolving distributed system issues like data consistency and fault tolerance. Ensured code
+                        quality through best practices, collaboration, and mentoring engineers for continuous growth.
+                    </p>
+                </div>
+                <div>
+                    <h2>HOSPITAL MANAGEMENT SYSTEM</h2>
+                    <p>Engineered a Hospital Management System using the MERN stack (MongoDB, Express.js, React.js,
+                        Node.js) to optimize healthcare operations. Integrated patient registration, appointment
+                        scheduling, medical records, and billing systems. Ensured high performance and functionality
+                        standards through continuous monitoring, enhancing efficiency in healthcare administration and
+                        delivering a seamless user experience.</p>
+                </div>
+                <div>
+                    <h2>TRAIN TICKET RESERVATION SYSTEM</h2>
+                    <p>Developed an online Train-Ticket-Reservation-System with a responsive frontend using HTML, CSS,
+                        and Bootstrap, and a robust backend with Java, JDBC, Servlet, and MySQL. Implemented secure
+                        login, payment integration, and data integrity. Enabled admin management of train data and user
+                        features like profile management, enhancing functionality and user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Contact--------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kg983825@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6307006215</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/krrishnaa____/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/krishna-gupta-6b16b7224/"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/Kriishnaaaa"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="krishna_resume--.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Krishna's Portfolio </p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer..', 'Software Engineer..'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwW45onutu-euOUX7ddYucSZ2IUiq1ZMO9r-utMPpemnIuKJa8l0F1TMipLyVzpVc0u/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message Sent Successfully!!'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
